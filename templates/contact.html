@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<header class="masthead" style="background-image: url('{% static "img/contact-bg.jpg" %}')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Contacto</h1>
+          <span class="subheading">Asesoría</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+      <p>Si deseas comunicarte conmigo, aquí tienes mis datos:</p>
+
+      <p><b>Nombre:</b> ESTEFANIA ELIZABETH CHINGA VERGARA</p>
+      <p><b>Teléfono:</b> <a href="tel:0959670232">0959670232</a></p>
+      <p><b>Correo:</b> <a href="mailto:echinga4831@utm.edu.ec">echinga4831@utm.edu.ec</a></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

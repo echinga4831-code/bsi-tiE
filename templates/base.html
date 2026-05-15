@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ingieneria TI-UTM</title>
+
+    <!-- CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">Mi Sitio Web</a>
+        <div>
+            <a href="/" class="btn btn-link">Portada</a>
+            <a href="/about/" class="btn btn-link">Acerca de</a>
+            <a href="/portfolio/" class="btn btn-link">Portafolio</a>
+            <a href="/contact/" class="btn btn-link">Contacto</a>
+            <a href="/admin/" class="btn btn-dark">Admin</a>
+        </div>
+    </div>
+</nav>
+
+<hr>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/clean-blog.min.js' %}"></script>
+
+</body>
+</html>
